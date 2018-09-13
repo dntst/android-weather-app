@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
             @Override
             public void onPlaceSelected(Place place) {
+                showRefresh();
                 presenter.onNewLocationSelected(new Location(place.getLatLng().latitude, place.getLatLng().longitude, 0, place.getName().toString()));
             }
 
