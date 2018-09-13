@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="weather_updated">Weather updated.</string>
+    <string name="weather_update_failed">Can`t update weather.</string>
+</resources>

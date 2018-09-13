@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3e9fcc</color>
+    <color name="colorPrimaryDark">#377ac0</color>
+    <color name="colorAccent">#db3936</color>
+    <color name="colorBlue">#377ac0</color>
+    <color name="colorLightBlue">#3e9fcc</color>
+    <color name="colorUltraLightBlue">#e1ffff</color>
+    <color name="colorOrange">#e99f22</color>
+    <color name="colorRed">#db3936</color>
+    <color name="colorAqua">#3fb4a1</color>
+    <color name="colorAquaLight">#cdfffb</color>
+    <color name="colorGreen">#46a02e</color>
+    <color name="colorPaper">#f4eddb</color>
+    <color name="colorGrey">#706d63</color>
+</resources>
