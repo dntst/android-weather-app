@@ -16,11 +16,20 @@ public class MainPresenter implements MainContract.Presenter {
     private AbstractLocation locationUtil;
     private AbstractDataSource dataSource;
 
-    public MainPresenter(MainContract.View view, EntityManager entityManager, AbstractDataSource dataSource, AbstractLocation locationUtil) {
-        this.view = view;
+    public MainPresenter(EntityManager entityManager, AbstractDataSource dataSource, AbstractLocation locationUtil) {
         this.entityManager = entityManager;
         this.locationUtil = locationUtil;
         this.dataSource = dataSource;
+    }
+
+    @Override
+    public void attachView(MainContract.View view) {
+        this.view = view;
+    }
+
+    @Override
+    public void detachView() {
+        view = null;
     }
 
     @Override

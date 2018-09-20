@@ -17,6 +17,10 @@ public interface MainContract {
     }
 
     interface Presenter {
+        void detachView();
+
+        void attachView(View mainView);
+
         void onViewCreated();
 
         void onRefreshWeather();

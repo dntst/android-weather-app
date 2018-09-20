@@ -70,10 +70,17 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         FusedLocation fusedLocation = new FusedLocation(this);
         OpenWeatherMapDataSource dataSource = new OpenWeatherMapDataSource();
 
-        presenter = new MainPresenter(this, entityManager, dataSource, fusedLocation);
+        presenter = new MainPresenter(entityManager, dataSource, fusedLocation);
+        presenter.attachView(this);
         refreshLayout.setOnRefreshListener(presenter::onRefreshWeather);
 
         presenter.onViewCreated();
+    }
+
+    @Override
+    public void onDestroy() {
+        presenter.detachView();
+        super.onDestroy();
     }
 
     @Override
