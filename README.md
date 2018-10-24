@@ -1,1 +1,1 @@
-# android-weather-app
+Simple weather application for android.
